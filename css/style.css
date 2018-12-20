@@ -169,6 +169,26 @@ body {
   text-align: center;
   padding: 2.5rem; }
 
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%;
+    /* display as block to avoid having small space underneath,
+    which would happen if we left it as inline default */
+    display: block; }
+
+.overview {
+  display: flex; }
+  .overview__stars {
+    /* push the last two items in the row to the end,
+    while first two remain at the start. could also have
+    used margin-left: auto on 3rd item */
+    margin-right: auto; }
+  .overview__icon-star, .overview__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary); }
+
 .container {
   /* will occupy 100% of body width up to 120rem */
   max-width: 120rem;
@@ -198,6 +218,5 @@ body {
 
 .hotel-view {
   background-color: #fff;
-  background-color: orangered;
   height: 80rem;
   flex: 1; }
